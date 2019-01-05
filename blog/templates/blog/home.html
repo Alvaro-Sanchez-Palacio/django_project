@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
-<body>
+{% extends 'blog/base.html' %}
+
+{% block content %}
     <h1>Blog home!</h1>
     {% for post in posts %}
     <div>
@@ -13,5 +9,4 @@
         <p>{{ post.content}}</p>
     </div>
     {% endfor %}
-</body>
-</html>
+{% endblock content %}
